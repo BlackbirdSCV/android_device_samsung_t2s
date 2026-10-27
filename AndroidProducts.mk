@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_t2s.mk
+    $(LOCAL_DIR)/custom_t2s.mk

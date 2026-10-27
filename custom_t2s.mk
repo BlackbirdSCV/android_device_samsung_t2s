@@ -10,12 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from t2s device
 $(call inherit-product, device/samsung/t2s/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := lineage_t2s
+PRODUCT_NAME := custom_t2s
 PRODUCT_DEVICE := t2s
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G996B
